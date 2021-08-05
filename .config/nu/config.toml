@@ -1,4 +1,6 @@
+prompt = "__zoxide_hook;__zoxide_prompt"
 startup = [
+    "zoxide init nushell --hook prompt | save ~/.zoxide.nu", "source ~/.zoxide.nu",
     "alias anatoconfigrelease = (cd /home/frajus/repositories/build-lucy-deployment-release ; cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DQt5_DIR=/opt/Qt/5.14.2/gcc_64/lib/cmake/Qt5 -DCMAKE_C_COMPILER=/usr/lib/ccache/clang -DCMAKE_CXX_COMPILER=/usr/lib/ccache/clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ../lucy-deployment)",
      "alias anatobuildrelease = (cd /home/frajus/repositories/build-lucy-deployment-release ; ninja -j 2)",
     "alias anatoconfidebug = (cd /home/frajus/repositories/build-lucy-deployment-debug ; cmake -G Ninja -DCMAKE_BUILD_TYPE=Debug -DQt5_DIR=/opt/Qt/5.14.2/gcc_64/lib/cmake/Qt5 -DCMAKE_CXX_FLAGS_DEBUG=-fsanitize=address -fsanitize-address-use-after-scope -fno-omit-frame-pointer -g -DCMAKE_EXE_LINKER_FLAGS_DEBUG=-fsanitize=address -fsanitize-address-use-after-scope -fno-omit-frame-pointer -DCMAKE_C_COMPILER=/usr/lib/ccache/clang -DCMAKE_CXX_COMPILER=/usr/lib/ccache/clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ../lucy-deployment)",
