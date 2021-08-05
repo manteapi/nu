@@ -1,0 +1,2 @@
+# nu
+nu shell configuration
