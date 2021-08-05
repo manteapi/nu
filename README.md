@@ -1,2 +1,2 @@
-# nu
-nu shell configuration
+# i3
+i3 configuration
